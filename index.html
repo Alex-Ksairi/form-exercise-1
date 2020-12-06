@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DropDown + Forms</title>
+    <!-- Google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Fontawesome 4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation - dropdown menu -->
+    <nav class="sticky">
+        <img src="images/logo.png" alt="logo">
+        <ul>
+            <!-- 1st link -->
+            <li class="link"><a href="#">Home</a></li>
+
+            <!-- 2nd link -->
+            <li class="link"><a href="#">About us <i class="fa fas fa-angle-down"></i></a>
+                <div class="sub-manu-1">
+                    <a href="#">Experience</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Education</a>
+                </div>
+            </li>
+
+
+            <!-- 3rd link -->
+            <li class="link"><a href="#">Services <i class="fa fas fa-angle-down"></i></a>
+                <div class="sub-manu-1">
+                    <a href="#">Web Designing</a>
+
+                    <div class="sub-link">
+                        <a href="#">Marketing <i class="fa fas fa-angle-right"></i></a>
+                        <div class="sub-manu-2">
+                            <a href="#">SEO</a>
+                            <a href="#">Social Media</a>
+                            <a href="#">E-mail Marketing</a>
+                        </div>
+                    </div>
+
+                    <a href="#">Mobile App</a>
+                </div>
+            </li>
+
+
+            <!-- 4th link -->
+            <li class="link"><a href="#">Clients</a></li>
+
+            <!-- 5th link -->
+            <li class="link"><a href="#">Pricing</a></li>
+
+            <!-- 6th link -->
+            <li class="link"><a href="#">Training</a></li>
+
+            <!-- 7th link -->
+            <li class="link"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Form -->
+    <main>
+        <div class="clip-path">
+            <!-- <img src="images/banner.jpg" alt="images"> -->
+            <h1>Training Application Form </h1>
+        </div>
+
+        <!-- 1st form application details -->
+        <form action="app">
+            <fieldset>
+                <legend>Applicant Details</legend>
+
+                <div class="item">
+                    <label for="name">Name</label>
+                    <input type="text" name="fname" id="name" placeholder="First">
+                    <input type="text" name="lastname" id="name" placeholder="Last">
+                </div>
+
+                <div class="item">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+
+                <div class="item">
+                    <label for="fax">Fax</label>
+                    <input type="text" name="fax" id="fax">
+                </div>
+
+                <div class="item">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div class="item">
+                    <label for="comName">Company name</label>
+                    <input type="text" name="comName" id="comName">
+                </div>
+
+                <div class="item">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="address">
+                    <input type="text" name="address" id="address" placeholder="address line 2">
+                    <input type="text" name="address" id="address" placeholder="City">
+                    <input type="text" name="address" id="address" placeholder="Region">
+                    <input type="text" name="address" id="address" placeholder="Postal/ Zip code">
+
+                    <select name="country" id="country">
+                        <option value="country">Country</option>
+                        <option value="italy">Italy</option>
+                        <option value="germany">Germany</option>
+                        <option value="frence">Frence</option>
+                        <option value="england">England</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                </div>
+
+            </fieldset>
+
+            <!-- 2nd form application details -->
+            <fieldset>
+                <legend>Course details</legend>
+
+                <div class="item">
+                    <label for="code">Course Code</label>
+                    <input type="text" name="code" id="code">
+                </div>
+
+                <div class="item">
+                    <label for="loc">Location</label>
+                    <input type="text" name="loc" id="loc">
+                </div>
+
+                <div class="item">
+                    <label for="date">Start date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+            </fieldset>
+
+            <!-- 3rd form application details -->
+            <fieldset>
+                <legend>Distributor Details</legend>
+
+                <div class="item">
+                    <label for="con">Contact name</label>
+                    <input type="text" name="con" id="con">
+                </div>
+
+                <div class="item">
+                    <label for="dis">Distributor name</label>
+                    <input type="text" name="dis" id="dis">
+                </div>
+
+                <div class="item">
+                    <label for="disadd">Distributor address</label>
+                    <input type="text" name="disadd" id="disadd" placeholder="Street address">
+                    <input type="text" name="disadd" id="disadd" placeholder=" Street address line 2">
+                    <input type="text" name="disadd" id="disadd" placeholder="City">
+                    <input type="text" name="disadd" id="disadd" placeholder="Region">
+                    <input type="text" name="disadd" id="disadd" placeholder="Postal/ Zip code">
+
+                    <select name="country" id="country">
+                        <option value="country">Country</option>
+                        <option value="italy">Russia</option>
+                        <option value="germany">Germany</option>
+                        <option value="frence">Frence</option>
+                        <option value="england">Armenia</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+
+                <div class="item">
+                    <label for="fon">Phone</label>
+                    <input type="text" name="fon" id="fon">
+                </div>
+
+                <div class="item">
+                    <label for="faxx">Fax</label>
+                    <input type="text" name="faxx" id="faxx">
+                </div>
+
+            </fieldset>
+
+
+        </form>
+
+        <!-- Footer -->
+        <div class="policy">
+            <h4>Privacy Policy<span class="required">*</span></h4>
+
+            <div class="check">
+                <input type="checkbox" name="check" id="check">
+                <label for="check" class="check-1">
+                    <span>I agree to the <a href="https://www.w3docs.com/privacy-policy" target="_blank">privacy
+                            policy</a>
+                    </span>
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" href="/">Send</button>
+
+    </main>
+
+
+</body>
+
+</html>

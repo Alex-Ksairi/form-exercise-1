@@ -1,0 +1,281 @@
+/* reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  height: 275vh;
+}
+
+/* Navigation - Dropdown Menu  */
+nav {
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #333 inset;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.link {
+  margin: 0 25px;
+  padding: 10px 0;
+}
+
+.link > a {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.link:hover > a {
+  color: #d5d5d5;
+}
+
+.fa-angle-down {
+  margin-left: 10px;
+}
+
+.link:nth-of-type(2), .link:nth-of-type(3) {
+  position: relative;
+}
+
+.sub-manu-1 {
+  display: none;
+  width: 160px;
+  padding: 10px 0 10px 10px;
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 10px #d5d5d5;
+
+  position: absolute;
+  top: 36px;
+  left: 0;
+}
+
+.link:hover .sub-manu-1 {
+  display: block;
+  z-index: 10;
+}
+
+.sub-manu-1  a {
+  display: block;
+  width: 100%;
+  padding: 15px 0 5px;
+  color: #000000;
+  border-bottom: 1px solid rgba(250, 172, 4, .3);
+}
+
+.sub-manu-1 a:nth-of-type(3), .sub-manu-2 a:nth-of-type(3) {
+  border-bottom: none;
+}
+
+.sub-manu-1 a:hover {
+  color: #d5d5d5;
+}
+
+.sub-link {
+  position: relative;
+}
+
+.sub-manu-2 {
+  display: none;
+  width: 160px;
+  padding: 10px 0 10px 10px;
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 10px #d5d5d5;
+
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.sub-link:hover .sub-manu-2 {
+  display: block;
+}
+
+.fa-angle-right {
+  float: right;
+  margin-right: 5px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+/* Form */
+main {
+  width: 60%;
+  height: 258vh;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px #333;
+}
+
+.clip-path {
+  width: 100%;
+  height: 300px;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 9px;
+  text-shadow: 5px 5px 5px #000000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 9), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 9)), url("images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+
+  clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+}
+
+/* 1st Form */
+form {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+}
+
+form  label, form input, form select{
+  width: calc(100% - 20px);
+  margin: 10px;
+  font-size: 12px;
+
+  display: block;
+}
+
+form input, form select {
+  padding: 8px 5px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+form legend {
+  padding: 20px 15px;
+  margin: 0 10px;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+fieldset {
+  border: 2px solid #8ACFF5;
+  border-radius: 5px;
+}
+
+form label {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+form label:hover {
+  color: #0173ff;
+}
+
+form input:hover, select:hover, .check:hover #check{
+  box-shadow: 0 0 3px #5b99eb, 0 0 3px #5b99eb;
+  border: 1px solid transparent;
+}
+
+input:hover::placeholder, .item:hover label, select:hover {
+  color: #0173ff;
+}
+
+/* 2nd Form  */
+fieldset:nth-of-type(2) {
+  border: 2px solid #6f16b8;
+  border-radius: 5px;
+}
+
+/* 3rd Form */
+fieldset:nth-of-type(3) {
+  border: 2px solid #c039e2;
+  border-radius: 5px;
+}
+
+/* Footer */
+.policy {
+  margin: 12px;
+}
+
+h4, span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.required {
+  color: red;
+  /* display: inline-block; */
+}
+
+a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0173ff;
+}
+
+#check {
+  margin-right: 8px;
+}
+
+
+
+/* button */
+button {
+  width: 20%;
+  height: 40px;
+  font-size: 1.3rem;
+  color: #ffffff;
+  background: #245380;
+  border-radius: 5px;
+  margin: 0 47%;
+  margin-top: 30px;
+  transform: translate(-47%, -47%);
+}
+
+button:hover {
+  /* color: #ffffff; */
+  background: #2b6296;
+  cursor: pointer;
+}
+
+/* media quary */
+@media screen and (max-width: 768px) {
+  nav ul a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .link {
+    margin: 0 5px;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  button {
+    margin: 25px 50%;
+    transform: translate(-50%, -50%);
+  }
+}
